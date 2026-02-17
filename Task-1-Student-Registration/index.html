@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veltech University - Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Veltech University</h1>
+<h2>Student Registration Form</h2>
+
+<form action="/register" method="POST">
+
+    <input type="text" name="name" placeholder="Enter Name" required>
+
+    <input type="email" name="email" placeholder="Enter Email" required>
+
+    <input type="date" name="dob" required>
+
+    <select name="department" required>
+        <option value="">Select Department</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>MECH</option>
+        <option>AI & ML</option>
+    </select>
+
+    <input type="tel" name="phone" placeholder="Enter Phone" required>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<br><br>
+
+<a href="/students">View Registered Students</a>
+
+</body>
+</html>
